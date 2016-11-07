@@ -1,0 +1,13 @@
+{
+  "compilerOptions":{
+    "target":"es5",
+    "module":"amd",
+    "sourceMap": true,
+    "declaration": true,
+    "outFile": "sections.js",
+    "watch": true
+  },
+  "include":[
+      "src/typings/*.ts"
+  ]
+}

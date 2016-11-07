@@ -1,0 +1,26 @@
+.sections-head{
+    cursor:pointer;
+    background-image: url(./arrow_down.png);
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position: 100% 100%;
+}
+.sections-content{
+    -webkit-transition: max-height 1s ease-in-out;
+    -moz-transition: max-height 1s ease-in-out;
+    -o-transition: max-height 1s ease-in-out;
+    transition: max-height 1s ease-in-out;
+    overflow: hidden;
+    max-height: 1000px;
+    &.hidden{
+        max-height:0px !important;
+    }
+    >p{
+        &:first-child{
+            padding-top:1em;
+        }
+        &:last-child{
+            padding-bottom: 1em;
+        }
+    }
+}
