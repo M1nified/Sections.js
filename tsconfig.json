@@ -4,7 +4,7 @@
     "module":"amd",
     "sourceMap": true,
     "declaration": true,
-    "outFile": "sections.js",
+    "outFile": "./build/sections.js",
     "watch": true
   },
   "include":[
