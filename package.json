@@ -1,0 +1,26 @@
+{
+  "name": "sections.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/sections.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M1nified/Sections.js.git"
+  },
+  "keywords": [
+    "sections",
+    "tabs"
+  ],
+  "author": "M1nified",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M1nified/Sections.js/issues"
+  },
+  "homepage": "https://github.com/M1nified/Sections.js#readme"
+}
