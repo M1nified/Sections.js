@@ -1,8 +1,8 @@
 {
   "name": "sections.js",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
-  "main": "build/sections.js",
+  "main": "index.js",
   "directories": {
     "example": "examples"
   },
