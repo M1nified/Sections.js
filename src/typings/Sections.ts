@@ -14,7 +14,7 @@ class Sections{
             let content = document.createElement('div');
             content.classList.add('sections-content');
             let children = section.childNodes;
-            for(let i = children.lenght; i>=0; i--){
+            for(let i = children.lenght-1; i>=0; i--){
                 content.appendChild(children[i]);
             }
             section.appendChild(head);
