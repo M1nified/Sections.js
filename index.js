@@ -33,7 +33,7 @@ var Sections = (function () {
             var content = document.createElement('div');
             content.classList.add('sections-content');
             var children = section.childNodes;
-            for (var i = children.lenght; i >= 0; i--) {
+            for (var i = children.lenght - 1; i >= 0; i--) {
                 content.appendChild(children[i]);
             }
             section.appendChild(head);
