@@ -10,14 +10,14 @@ class Sections{
             let header = this.getFirstHeader(section);
             let head = document.createElement('div');
             head.classList.add('sections-head');
-            section.insertBefore(head,section.firstChild);
             head.appendChild(header);
             let content = document.createElement('div');
             content.classList.add('sections-content');
-            section.childNodes.forEach((val)=>{
-                if(val == head) return;
-                content.appendChild(val);
-            });
+            let children = section.childNodes;
+            for(let i = children.lenght; i>=0; i--){
+                content.appendChild(children[i]);
+            }
+            section.appendChild(head);
             section.appendChild(content);
             content.style.maxHeight = content.clientHeight + 'px';
             content.classList.add('hidden');

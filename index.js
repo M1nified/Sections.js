@@ -29,15 +29,14 @@ var Sections = (function () {
             var header = _this.getFirstHeader(section);
             var head = document.createElement('div');
             head.classList.add('sections-head');
-            section.insertBefore(head, section.firstChild);
             head.appendChild(header);
             var content = document.createElement('div');
             content.classList.add('sections-content');
-            section.childNodes.forEach(function (val) {
-                if (val == head)
-                    return;
-                content.appendChild(val);
-            });
+            var children = section.childNodes;
+            for (var i = children.lenght; i >= 0; i--) {
+                content.appendChild(children[i]);
+            }
+            section.appendChild(head);
             section.appendChild(content);
             content.style.maxHeight = content.clientHeight + 'px';
             content.classList.add('hidden');
