@@ -12,11 +12,9 @@
   transition: max-height 1s ease-in-out;
   overflow: hidden;
   max-height: 1000px; }
-  .sections-content.hidden {
+  .sections-content.sections-hidden {
     max-height: 0px !important; }
   .sections-content > p:first-child {
     padding-top: 1em; }
   .sections-content > p:last-child {
     padding-bottom: 1em; }
-
-/*# sourceMappingURL=index.css.map */

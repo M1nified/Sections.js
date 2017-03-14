@@ -39,7 +39,7 @@ var Sections = (function () {
             section.appendChild(head);
             section.appendChild(content);
             content.style.maxHeight = content.clientHeight + 'px';
-            content.classList.add('hidden');
+            content.classList.add('sections-hidden');
             _this.all.push({
                 head: head,
                 content: content
@@ -48,9 +48,9 @@ var Sections = (function () {
                 _this.all.forEach(function (sec) {
                     if (sec.content == content)
                         return;
-                    sec.content.classList.add('hidden');
+                    sec.content.classList.add('sections-hidden');
                 });
-                content.classList.toggle('hidden');
+                content.classList.toggle('sections-hidden');
             };
             head.addEventListener('click', onclick);
         });
