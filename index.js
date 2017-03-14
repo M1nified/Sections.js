@@ -33,9 +33,8 @@ var Sections = (function () {
             var content = document.createElement('div');
             content.classList.add('sections-content');
             var children = section.childNodes;
-            console.log(children);
             for (var i = children.length - 1; i >= 0; i--) {
-                content.appendChild(children[i]);
+                content.insertBefore(children[i], content.firstChild);
             }
             section.appendChild(head);
             section.appendChild(content);
